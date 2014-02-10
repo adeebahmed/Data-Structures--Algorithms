@@ -1,0 +1,31 @@
+Lab report for Linked List Lab - aahmed22
+Timestamp: 2014-02-10 16:28:50
+
+|  :scenario |                                :title |                   :result | :score |
+|------------+---------------------------------------+---------------------------+--------|
+|    working | Test student code vs instructor tests |                      Fail |     46 |
+| qualifying | Test student tests vs instructor code |                      Fail |      5 |
+| qualifying |           Qualifying Scenarios Failed | No further scenarios run. |      0 |
+|      total |                           Total Score |                           |     51 |
+
+Details:
+
+
+** Details for Test student code vs instructor tests
+
+
+FAIL "about this lab - the student never started.  Fix this `facts` from." at (t_core.clj:61)
+    Expected: 42
+      Actual: 30
+FAILURE: 1 check failed.  (But 25 succeeded.)
+Subprocess failed
+
+
+** Details for Test student tests vs instructor code
+
+
+FAIL "about this lab - the student never started.  Fix this `facts` from." at (t_core.clj:61)
+    Expected: 42
+      Actual: 30
+FAILURE: 1 check failed.  (But 25 succeeded.)
+Subprocess failed
