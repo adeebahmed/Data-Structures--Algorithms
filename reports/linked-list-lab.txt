@@ -1,0 +1,205 @@
+Lab report for Linked List Lab - aahmed22
+Timestamp: 2014-02-10 14:59:35
+
+|  :scenario |                                    :title | :result | :score |
+|------------+-------------------------------------------+---------+--------|
+|    working |     Test student code vs instructor tests |    Fail |     46 |
+| qualifying |     Test student tests vs instructor code |         |        |
+|    broke-1 |            Insert doesn't increment size. |         |        |
+|    broke-2 |                    Insert doesn't insert. |         |        |
+|    broke-3 |                    Insert truncates list. |         |        |
+|    broke-4 |                    Sorted insert deletes. |         |        |
+|    broke-5 |             Sorted insert truncates list. |         |        |
+|    broke-6 |                    Delete truncates list. |         |        |
+|    broke-7 |            Delete doesn't decrement size. |         |        |
+|    broke-8 |            Delete always decrements size. |         |        |
+|    broke-9 |              Delete-all only deletes one. |         |        |
+|   broke-10 | Delete all decrements count in all cases. |         |        |
+|      total |                               Total Score |         |     46 |
+
+Details:
+
+
+** Details for Test student code vs instructor tests
+
+Retrieving midje/midje/1.5.0/midje-1.5.0.pom from clojars
+Retrieving org/clojure/algo.monads/0.1.0/algo.monads-0.1.0.pom from central
+Retrieving org/clojure/pom.contrib/0.0.23/pom.contrib-0.0.23.pom from central
+Retrieving org/clojure/tools.macro/0.1.0/tools.macro-0.1.0.pom from central
+Retrieving org/clojure/clojure/1.3.0-beta1/clojure-1.3.0-beta1.pom from central
+Retrieving org/clojure/core.incubator/0.1.0/core.incubator-0.1.0.pom from central
+Retrieving bultitude/bultitude/0.1.7/bultitude-0.1.7.pom from clojars
+Retrieving leiningen-core/leiningen-core/2.0.0-preview10/leiningen-core-2.0.0-preview10.pom from clojars
+Retrieving classlojure/classlojure/0.6.6/classlojure-0.6.6.pom from clojars
+Retrieving useful/useful/0.8.3-alpha8/useful-0.8.3-alpha8.pom from clojars
+Retrieving robert/hooke/1.1.2/hooke-1.1.2.pom from clojars
+Retrieving com/cemerick/pomegranate/0.0.13/pomegranate-0.0.13.pom from central
+Retrieving org/sonatype/aether/aether-api/1.13.1/aether-api-1.13.1.pom from central
+Retrieving org/sonatype/aether/aether/1.13.1/aether-1.13.1.pom from central
+Retrieving org/sonatype/forge/forge-parent/10/forge-parent-10.pom from central
+Retrieving org/sonatype/aether/aether-util/1.13.1/aether-util-1.13.1.pom from central
+Retrieving org/sonatype/aether/aether-impl/1.13.1/aether-impl-1.13.1.pom from central
+Retrieving org/sonatype/aether/aether-spi/1.13.1/aether-spi-1.13.1.pom from central
+Retrieving org/sonatype/aether/aether-connector-file/1.13.1/aether-connector-file-1.13.1.pom from central
+Retrieving org/sonatype/aether/aether-connector-wagon/1.13.1/aether-connector-wagon-1.13.1.pom from central
+Retrieving org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom from central
+Retrieving org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom from central
+Retrieving org/apache/maven/maven-parent/11/maven-parent-11.pom from central
+Retrieving org/apache/apache/5/apache-5.pom from central
+Retrieving org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom from central
+Retrieving org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom from central
+Retrieving org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom from central
+Retrieving org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom from central
+Retrieving org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.pom from central
+Retrieving org/sonatype/sisu/sisu-inject-plexus/2.2.3/sisu-inject-plexus-2.2.3.pom from central
+Retrieving org/sonatype/sisu/inject/guice-plexus/2.2.3/guice-plexus-2.2.3.pom from central
+Retrieving org/sonatype/sisu/inject/guice-bean/2.2.3/guice-bean-2.2.3.pom from central
+Retrieving org/sonatype/sisu/inject/containers/2.2.3/containers-2.2.3.pom from central
+Retrieving org/sonatype/sisu/sisu-inject/2.2.3/sisu-inject-2.2.3.pom from central
+Retrieving org/sonatype/sisu/sisu-parent/2.2.3/sisu-parent-2.2.3.pom from central
+Retrieving org/sonatype/forge/forge-parent/9/forge-parent-9.pom from central
+Retrieving org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom from central
+Retrieving org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom from central
+Retrieving org/sonatype/sisu/sisu-inject-bean/2.2.3/sisu-inject-bean-2.2.3.pom from central
+Retrieving org/sonatype/sisu/sisu-guice/3.0.3/sisu-guice-3.0.3.pom from central
+Retrieving org/sonatype/sisu/inject/guice-parent/3.0.3/guice-parent-3.0.3.pom from central
+Retrieving org/apache/maven/maven-aether-provider/3.0.4/maven-aether-provider-3.0.4.pom from central
+Retrieving org/apache/maven/maven/3.0.4/maven-3.0.4.pom from central
+Retrieving org/apache/maven/maven-parent/21/maven-parent-21.pom from central
+Retrieving org/apache/apache/10/apache-10.pom from central
+Retrieving org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.pom from central
+Retrieving org/codehaus/plexus/plexus-utils/2.0.6/plexus-utils-2.0.6.pom from central
+Retrieving org/apache/maven/maven-model-builder/3.0.4/maven-model-builder-3.0.4.pom from central
+Retrieving org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom from central
+Retrieving org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom from central
+Retrieving org/apache/maven/maven-repository-metadata/3.0.4/maven-repository-metadata-3.0.4.pom from central
+Retrieving org/apache/maven/wagon/wagon-provider-api/2.2/wagon-provider-api-2.2.pom from central
+Retrieving org/apache/maven/wagon/wagon/2.2/wagon-2.2.pom from central
+Retrieving org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom from central
+Retrieving org/sonatype/spice/spice-parent/16/spice-parent-16.pom from central
+Retrieving org/sonatype/forge/forge-parent/5/forge-parent-5.pom from central
+Retrieving org/apache/maven/wagon/wagon-http/2.2/wagon-http-2.2.pom from central
+Retrieving org/apache/maven/wagon/wagon-providers/2.2/wagon-providers-2.2.pom from central
+Retrieving org/apache/maven/wagon/wagon-http-shared4/2.2/wagon-http-shared4-2.2.pom from central
+Retrieving org/jsoup/jsoup/1.6.1/jsoup-1.6.1.pom from central
+Retrieving org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.pom from central
+Retrieving org/apache/httpcomponents/httpcomponents-client/4.1.2/httpcomponents-client-4.1.2.pom from central
+Retrieving org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom from central
+Retrieving org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.pom from central
+Retrieving org/apache/httpcomponents/httpcomponents-core/4.1.2/httpcomponents-core-4.1.2.pom from central
+Retrieving commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom from central
+Retrieving org/apache/commons/commons-parent/5/commons-parent-5.pom from central
+Retrieving org/apache/apache/4/apache-4.pom from central
+Retrieving commons-codec/commons-codec/1.4/commons-codec-1.4.pom from central
+Retrieving org/apache/commons/commons-parent/11/commons-parent-11.pom from central
+Retrieving commons-io/commons-io/2.0.1/commons-io-2.0.1.pom from central
+Retrieving org/apache/commons/commons-parent/15/commons-parent-15.pom from central
+Retrieving org/apache/apache/7/apache-7.pom from central
+Retrieving gui-diff/gui-diff/0.3.9/gui-diff-0.3.9.pom from clojars
+Retrieving org/clojure/algo.monads/0.1.0/algo.monads-0.1.0.jar from central
+Retrieving org/clojure/core.incubator/0.1.0/core.incubator-0.1.0.jar from central
+Retrieving com/cemerick/pomegranate/0.0.13/pomegranate-0.0.13.jar from central
+Retrieving org/sonatype/aether/aether-api/1.13.1/aether-api-1.13.1.jar from central
+Retrieving org/sonatype/aether/aether-util/1.13.1/aether-util-1.13.1.jar from central
+Retrieving org/sonatype/aether/aether-impl/1.13.1/aether-impl-1.13.1.jar from central
+Retrieving org/sonatype/aether/aether-spi/1.13.1/aether-spi-1.13.1.jar from central
+Retrieving org/sonatype/aether/aether-connector-file/1.13.1/aether-connector-file-1.13.1.jar from central
+Retrieving org/sonatype/aether/aether-connector-wagon/1.13.1/aether-connector-wagon-1.13.1.jar from central
+Retrieving org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.jar from central
+Retrieving org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.jar from central
+Retrieving org/sonatype/sisu/sisu-inject-bean/2.2.3/sisu-inject-bean-2.2.3.jar from central
+Retrieving org/sonatype/sisu/sisu-inject-plexus/2.2.3/sisu-inject-plexus-2.2.3.jar from central
+Retrieving org/sonatype/sisu/sisu-guice/3.0.3/sisu-guice-3.0.3-no_aop.jar from central
+Retrieving org/apache/maven/maven-aether-provider/3.0.4/maven-aether-provider-3.0.4.jar from central
+Retrieving org/apache/maven/maven-model/3.0.4/maven-model-3.0.4.jar from central
+Retrieving org/apache/maven/maven-model-builder/3.0.4/maven-model-builder-3.0.4.jar from central
+Retrieving org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar from central
+Retrieving org/apache/maven/maven-repository-metadata/3.0.4/maven-repository-metadata-3.0.4.jar from central
+Retrieving org/apache/maven/wagon/wagon-provider-api/2.2/wagon-provider-api-2.2.jar from central
+Retrieving org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar from central
+Retrieving org/apache/maven/wagon/wagon-http/2.2/wagon-http-2.2.jar from central
+Retrieving org/jsoup/jsoup/1.6.1/jsoup-1.6.1.jar from central
+Retrieving commons-io/commons-io/2.0.1/commons-io-2.0.1.jar from central
+Retrieving commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar from central
+Retrieving org/apache/httpcomponents/httpclient/4.1.2/httpclient-4.1.2.jar from central
+Retrieving org/apache/maven/wagon/wagon-http-shared4/2.2/wagon-http-shared4-2.2.jar from central
+Retrieving org/apache/httpcomponents/httpcore/4.1.2/httpcore-4.1.2.jar from central
+Retrieving useful/useful/0.8.3-alpha8/useful-0.8.3-alpha8.jar from clojars
+Retrieving classlojure/classlojure/0.6.6/classlojure-0.6.6.jar from clojars
+Retrieving bultitude/bultitude/0.1.7/bultitude-0.1.7.jar from clojars
+Retrieving midje/midje/1.5.0/midje-1.5.0.jar from clojars
+Retrieving leiningen-core/leiningen-core/2.0.0-preview10/leiningen-core-2.0.0-preview10.jar from clojars
+Retrieving robert/hooke/1.1.2/hooke-1.1.2.jar from clojars
+Retrieving gui-diff/gui-diff/0.3.9/gui-diff-0.3.9.jar from clojars
+
+FAIL "about this lab - the student never started.  Fix this `facts` from." at (t_core.clj:61)
+    Expected: 42
+      Actual: 30
+FAILURE: 1 check failed.  (But 25 succeeded.)
+Subprocess failed
+
+
+** Details for Test student tests vs instructor code
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Insert doesn't increment size.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Insert doesn't insert.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Insert truncates list.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Sorted insert deletes.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Sorted insert truncates list.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Delete truncates list.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Delete doesn't decrement size.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Delete always decrements size.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Delete-all only deletes one.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
+
+
+** Details for Delete all decrements count in all cases.
+
+Couldn't find project.clj, which is needed for midje
+bash: line 0: cd: /home/grader/quarry/linked-list-lab/aahmed22/running: No such file or directory
