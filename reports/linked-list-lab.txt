@@ -1,9 +1,9 @@
 Lab report for Linked List Lab - aahmed22
-Timestamp: 2014-02-17 16:30:51
+Timestamp: 2014-02-18 23:03:11
 
 |  :scenario |                                    :title |                              :result | :score |
 |------------+-------------------------------------------+--------------------------------------+--------|
-|    working |     Test student code vs instructor tests |                                 Fail |     40 |
+|    working |     Test student code vs instructor tests |                                 Fail |     50 |
 | qualifying |     Test student tests vs instructor code |                                 Pass |      5 |
 |    broke-1 |            Insert doesn't increment size. | Pass: student tests detected errors. |      5 |
 |    broke-2 |                    Insert doesn't insert. | Pass: student tests detected errors. |      5 |
@@ -15,7 +15,7 @@ Timestamp: 2014-02-17 16:30:51
 |    broke-8 |            Delete always decrements size. | Pass: student tests detected errors. |      5 |
 |    broke-9 |              Delete-all only deletes one. | Pass: student tests detected errors. |      5 |
 |   broke-10 | Delete all decrements count in all cases. | Pass: student tests detected errors. |      5 |
-|      total |                               Total Score |                                      |     95 |
+|      total |                               Total Score |                                      |    105 |
 
 Details:
 
