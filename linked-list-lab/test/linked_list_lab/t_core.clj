@@ -30,6 +30,7 @@
       (-> nulist2 :data :cdr :car) => 10)))
 
 (facts "about `list-to-cons`"
+
   (fact "it converts lists properly"
     (list-to-cons nil) => nil
     (list-to-cons '(3)) => (Cons. 3 nil)
@@ -52,10 +53,17 @@
       (-> (insert-ordered nulist 9) :data) => (list-to-cons '(1 5 8 9))
       (-> (insert-ordered nulist 5) :data) => (list-to-cons '(1 5 5 8)))))
 
-(facts "about `delete`")
+(facts "about `delete`"
+  (let [mylist (List. (Cons. 1 (Cons. 2 (Cons. 3 nil))) 3)]
+ (fact "Deletes specified element from the list."
+   (delete 1 mylist) => (List. (Cons. 2 (Cons. 3 nil)) 2)
+   (delete 4 mylist) => (List. (Cons. 1 (Cons. 2 (Cons. 3 nil))) 3))))
 
-(facts "about `delete-all`")
+(facts "about `delete-all`"
+    (let [mylist (List. (Cons. 1 (Cons. 2 (Cons. 1 nil))) 3)]
+ (fact "Delete all occurances  of 'ele' form list 'xx'"
+    (delete-all 1 mylist) => (List. (Cons. 2 nil) 1))))
 
 (facts "about this lab"
-  (fact "the student never started.  Fix this `facts` from."
-    (+ 10 20) => 42))
+ (fact "the student never started.  Fix this `facts` from."
+  (+ 10 20) => 30))
