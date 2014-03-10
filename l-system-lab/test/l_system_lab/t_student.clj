@@ -1,6 +1,6 @@
-(ns l_system_lab.t-core
+(ns l_system_lab.t-student
   (:use midje.sweet)
-  (:use [l_system_lab.core]))
+  (:use [l_system_lab.student]))
 
 (facts "about numners"
        (fact "Floating point is close enough sometimes."
