@@ -1,0 +1,21 @@
+Grade Report for Adeeb Ahmed
+Produced 2014-02-25 14:03
+Netid: aahmed22 cwid: A20301656
+Course: cs331 (2014-01)  Section: 02
+
+                    Assignment  Status Raw Max    Norm Weight  Points 
+------------------------------ ------- --- --- ------- ------ ------- 
+                        Exam 1 Pending   0 100   0.00% 0.0000  0.0000 
+                        Exam 2 Pending   0 100   0.00% 0.0000  0.0000 
+                    Final Exam Pending   0 100   0.00% 0.0000  0.0000 
+               Linked List Lab  Graded 100 100 100.00% 0.1500 15.0000 
+         Pre Course Assessment  Graded   1   1 100.00% 0.0167  1.6667 
+ Clojure Introduction Activity  Graded   1   1 100.00% 0.0167  1.6667 
+                  Clojure Data  Graded   1   1 100.00% 0.0167  1.6667 
+               Record Activity  Graded   1   1 100.00% 0.0167  1.6667 
+            Recursion Activity  Graded   1   1 100.00% 0.0167  1.6667 
+      Immutable Lists Activity Pending   0   1   0.00% 0.0000  0.0000 
+        Mutable Lists Activity  Graded   1   1 100.00% 0.0167  1.6667 
+Reversing a Doubly Linked List Pending   0   1   0.00% 0.0000  0.0000 
+------------------------------ ------- --- --- ------- ------ ------- 
+                         Total                 100.00% 0.2500 25.0000 
