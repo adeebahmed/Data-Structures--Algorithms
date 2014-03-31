@@ -60,7 +60,7 @@
    (delete 4 mylist) => (List. (Cons. 1 (Cons. 2 (Cons. 3 nil))) 3))))
 
 (facts "about `delete-all`"
-    (let [mylist (List (Cons. 1 (Cons. 2 (Cons. 1 nil))) 3)]
+    (let [mylist (List. (Cons. 1 (Cons. 2 (Cons. 1 nil))) 3)]
  (fact "Delete all occurances  of 'ele' form list 'xx'"
     (delete-all 1 mylist) => (List. (Cons. 2 nil) 1))))
 
