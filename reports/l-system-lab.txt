@@ -1,0 +1,70 @@
+Lab report for L-System Lab - aahmed22
+Timestamp: 2014-03-31 09:26:36
+
+| :scenario |                                :title | :result | :score |
+|-----------+---------------------------------------+---------+--------|
+|   working | Test student code vs instructor tests |    Fail |     14 |
+|     total |                           Total Score |         |     14 |
+
+Details:
+
+
+** Details for Test student code vs instructor tests
+
+
+FAIL "about transform - It changes things it has rules about." at (t_student.clj:10)
+    Expected: [:a :b :c :x :a :b]
+      Actual: [:f :x]
+
+FAIL "about transform - It changes things it has rules about." at (t_student.clj:13)
+    Expected: [:f :x :a :b]
+      Actual: [:f :x]
+
+FAIL "about transform - It changes things it has rules about." at (t_student.clj:15)
+    Expected: [:a :b :c :x :a :b :c]
+      Actual: [:f :x :f]
+
+FAIL "about get-xy-scale - It works when x and y have the same range." at (t_student.clj:26)
+    Expected: {:min-x 10, :min-y 10, :scale 48.0}
+      Actual: {:min-x 1, :min-y 1, :scale 1}
+
+FAIL "about get-xy-scale - It works when x and y have the same range." at (t_student.clj:28)
+    Expected: {:min-x 10, :min-y 10, :scale 6.0}
+      Actual: {:min-x 1, :min-y 1, :scale 1}
+
+FAIL "about get-xy-scale - It works when x has a larger range than y." at (t_student.clj:32)
+Actual result did not agree with the checking function.
+        Actual result: {:min-x 1, :min-y 1, :scale 1}
+    Checking function: (rough-scale {:min-x 10, :min-y 90, :scale 0.16053511})
+
+FAIL "about get-xy-scale - It works when y has a larger range than x." at (t_student.clj:35)
+Actual result did not agree with the checking function.
+        Actual result: {:min-x 1, :min-y 1, :scale 1}
+    Checking function: (rough-scale {:min-x 90, :min-y 90, :scale 0.16494845})
+
+FAIL "about scale-turtle - It works when x and y have the same range." at (t_student.clj:58)
+Actual result did not agree with the checking function.
+        Actual result: [[:line 10 10 20 20]]
+    Checking function: (rough-lines [[:line 10.0 10.0 490.0 490.0]])
+
+FAIL "about scale-turtle - It works when x and y have the same range." at (t_student.clj:60)
+Actual result did not agree with the checking function.
+        Actual result: [[:line 10 10 20 20] [:line 50 90 90 50]]
+    Checking function: (rough-lines [[:line 10.0 10.0 70.0 70.0] [:line 250.0 490.0 490.0 250.0]])
+
+FAIL "about scale-turtle - It works when x and y have the same range." at (t_student.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: [[:line 50 90 20 10] [:line 10 20 90 50]]
+    Checking function: (rough-lines [[:line 250.0 490.0 70.0 10.0] [:line 10.0 70.0 490.0 250.0]])
+
+FAIL "about scale-turtle - It works when x has a larger range than y." at (t_student.clj:65)
+Actual result did not agree with the checking function.
+        Actual result: [[:line 10 90 1000 95] [:line 2000 100 3000 110]]
+    Checking function: (rough-lines [[:line 10.0 10.0 168.92976 10.802675] [:line 329.46487 11.605351 490.0 13.210702]])
+
+FAIL "about scale-turtle - It works when y has a larger range than x." at (t_student.clj:68)
+Actual result did not agree with the checking function.
+        Actual result: [[:line 90 90 95 1000] [:line 100 2000 110 3000]]
+    Checking function: (rough-lines [[:line 10.0 10.0 10.824742 160.10309] [:line 11.649485 325.05154 13.298969 490.0]])
+FAILURE: 12 checks failed.  (But 2 succeeded.)
+Subprocess failed
