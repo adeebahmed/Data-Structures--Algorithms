@@ -1,9 +1,9 @@
 Lab report for Linked List Lab - aahmed22
-Timestamp: 2014-02-18 23:03:11
+Timestamp: 2014-04-07 12:01:54
 
 |  :scenario |                                    :title |                              :result | :score |
 |------------+-------------------------------------------+--------------------------------------+--------|
-|    working |     Test student code vs instructor tests |                                 Fail |     50 |
+|    working |     Test student code vs instructor tests |                                 Fail |     25 |
 | qualifying |     Test student tests vs instructor code |                                 Pass |      5 |
 |    broke-1 |            Insert doesn't increment size. | Pass: student tests detected errors. |      5 |
 |    broke-2 |                    Insert doesn't insert. | Pass: student tests detected errors. |      5 |
@@ -15,7 +15,7 @@ Timestamp: 2014-02-18 23:03:11
 |    broke-8 |            Delete always decrements size. | Pass: student tests detected errors. |      5 |
 |    broke-9 |              Delete-all only deletes one. | Pass: student tests detected errors. |      5 |
 |   broke-10 | Delete all decrements count in all cases. | Pass: student tests detected errors. |      5 |
-|      total |                               Total Score |                                      |    105 |
+|      total |                               Total Score |                                      |     80 |
 
 Details:
 
@@ -23,18 +23,86 @@ Details:
 ** Details for Test student code vs instructor tests
 
 
-FAIL "about `delete` - Deletes specified element from the list." at (t_core.clj:59)
-    Expected: {:data {:car 2, :cdr {:car 3, :cdr }}, :size 2}::linked_list_lab.core.List
+FAIL "about `delete` - it removes elements properly." at (t_core.clj:58)
+    Expected: {:car 1, :cdr {:car 5, :cdr {:car 8, :cdr {:car 5, :cdr {:car 1, :cdr }}}}}::linked_list_lab.core.Cons
       Actual: nil
 
-FAIL "about `delete` - Deletes specified element from the list." at (t_core.clj:60)
-    Expected: {:data {:car 1, :cdr {:car 2, :cdr {:car 3, :cdr }}}, :size 3}::linked_list_lab.core.List
+FAIL "about `delete` - it removes elements properly." at (t_core.clj:59)
+    Expected: {:car 5, :cdr {:car 8, :cdr {:car 5, :cdr {:car 1, :cdr }}}}::linked_list_lab.core.Cons
       Actual: nil
 
-FAIL "about `delete-all` - Delete all occurances  of 'ele' form list 'xx'" at (t_core.clj:65)
-    Expected: {:data {:car 2, :cdr }, :size 1}::linked_list_lab.core.List
+FAIL "about `delete` - it removes elements properly." at (t_core.clj:60)
+    Expected: {:car 1, :cdr {:car 8, :cdr {:car 5, :cdr {:car 1, :cdr }}}}::linked_list_lab.core.Cons
       Actual: nil
-FAILURE: 3 checks failed.  (But 26 succeeded.)
+
+FAIL "about `delete` - it removes elements properly." at (t_core.clj:61)
+    Expected: {:car 1, :cdr {:car 5, :cdr {:car 5, :cdr {:car 1, :cdr }}}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete` - it removes elements properly." at (t_core.clj:62)
+    Expected: {:car 1, :cdr {:car 5, :cdr {:car 8, :cdr {:car 5, :cdr {:car 1, :cdr }}}}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete` - it handles size correctly." at (t_core.clj:64)
+    Expected: 5
+      Actual: nil
+
+FAIL "about `delete` - it handles size correctly." at (t_core.clj:65)
+    Expected: 4
+      Actual: nil
+
+FAIL "about `delete` - it handles size correctly." at (t_core.clj:66)
+    Expected: 4
+      Actual: nil
+
+FAIL "about `delete` - it handles size correctly." at (t_core.clj:67)
+    Expected: 4
+      Actual: nil
+
+FAIL "about `delete` - it handles size correctly." at (t_core.clj:68)
+    Expected: 5
+      Actual: nil
+
+FAIL "about `delete-all` - it removes elements properly." at (t_core.clj:74)
+    Expected: {:car 1, :cdr {:car 5, :cdr {:car 8, :cdr {:car 5, :cdr {:car 1, :cdr }}}}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete-all` - it removes elements properly." at (t_core.clj:75)
+    Expected: {:car 5, :cdr {:car 8, :cdr {:car 5, :cdr }}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete-all` - it removes elements properly." at (t_core.clj:76)
+    Expected: {:car 1, :cdr {:car 8, :cdr {:car 1, :cdr }}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete-all` - it removes elements properly." at (t_core.clj:77)
+    Expected: {:car 1, :cdr {:car 5, :cdr {:car 5, :cdr {:car 1, :cdr }}}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete-all` - it removes elements properly." at (t_core.clj:78)
+    Expected: {:car 1, :cdr {:car 5, :cdr {:car 8, :cdr {:car 5, :cdr {:car 1, :cdr }}}}}::linked_list_lab.core.Cons
+      Actual: nil
+
+FAIL "about `delete-all` - it handles size correctly." at (t_core.clj:80)
+    Expected: 5
+      Actual: nil
+
+FAIL "about `delete-all` - it handles size correctly." at (t_core.clj:81)
+    Expected: 3
+      Actual: nil
+
+FAIL "about `delete-all` - it handles size correctly." at (t_core.clj:82)
+    Expected: 3
+      Actual: nil
+
+FAIL "about `delete-all` - it handles size correctly." at (t_core.clj:83)
+    Expected: 4
+      Actual: nil
+
+FAIL "about `delete-all` - it handles size correctly." at (t_core.clj:84)
+    Expected: 5
+      Actual: nil
+FAILURE: 20 checks failed.  (But 25 succeeded.)
 Subprocess failed
 
 
