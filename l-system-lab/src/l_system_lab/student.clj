@@ -113,12 +113,6 @@
  )
 )
 
-(scale-turtle [[:line 10 10 20 20] [:line 50 90 90 50]])
-
-(scale-turtle [[:line 50 90 20 10] [:line 10 20 90 50]])
-
-(scale-turtle [[:line 10 90 1000 95] [:line 2000 100 3000 110]])
-
 
 (defn scale-turtle
   [v]
