@@ -5,6 +5,59 @@
   [v]
   (filter #(not= [] %) v))
 
+
+(defn get-xy-scale-one
+  "Get the scaling factor for the coordinates."
+  [v]
+  (let [vector1 (v 0)
+        [x1 y1 x2 y2] (rest vector1)
+        out[]
+       xvec (into out [x1 x2])
+       yvec (into out [y1 y2])
+       xmin (apply min xvec)
+       xmax (apply max xvec)
+       ymin (apply min yvec)
+       ymax (apply max yvec)
+       xrange (- xmax xmin)
+       yrange (- ymax ymin)]
+
+       (cond (< xrange yrange)
+         {:scale (double (/ 480 yrange)), :min-x xmin, :min-y ymin}
+         :else  {:scale (double (/ 480 xrange)), :min-x xmin, :min-y ymin})
+      )
+   )
+
+
+
+(defn get-xy-scale-two
+  "Get the scaling factor for the coordinates."
+  [v]
+  (let [vector1 (v 0)
+        vector2 (v 1)
+        [x1 y1 x2 y2] (rest vector1)
+        [x3 y3 x4 y4] (rest vector2)
+        out []
+       xvec (into out[x1 x2 x3 x4])
+       yvec (into out[y1 y2 y3 y4])
+       xmin (apply min xvec)
+       xmax (apply max xvec)
+       ymin (apply min yvec)
+       ymax (apply max yvec)
+       xrange (- xmax xmin)
+       yrange (- ymax ymin)]
+
+       (cond (< xrange yrange)
+         {:scale (double (/ 480 yrange)), :min-x xmin, :min-y ymin}
+         :else  {:scale (double (/ 480 xrange)), :min-x xmin, :min-y ymin})
+
+    )
+  )
+
+(defn get-xy-scale
+  [v]
+  (cond (= (count v) 1)  (get-xy-scale-one v)
+        :else (get-xy-scale-two v)))
+
 (defn scale-turtle-one
   [v]
  (let [vector1 (v 0)
@@ -82,65 +135,17 @@
          (recur (rest v) (into out (rest v)))))))
 )
 
-(defn get-xy-scale-one
-  "Get the scaling factor for the coordinates."
-  [v]
-  (let [vector1 (v 0)
-        [x1 y1 x2 y2] (rest vector1)
-        out[]
-       xvec (into out [x1 x2])
-       yvec (into out [y1 y2])
-       xmin (apply min xvec)
-       xmax (apply max xvec)
-       ymin (apply min yvec)
-       ymax (apply max yvec)
-       xrange (- xmax xmin)
-       yrange (- ymax ymin)]
 
-       (cond (< xrange yrange)
-         {:scale (double (/ 480 yrange)), :min-x xmin, :min-y ymin}
-         :else  {:scale (double (/ 480 xrange)), :min-x xmin, :min-y ymin})
-      )
-   )
-
-
-
-(defn get-xy-scale-two
-  "Get the scaling factor for the coordinates."
-  [v]
-  (let [vector1 (v 0)
-        vector2 (v 1)
-        [x1 y1 x2 y2] (rest vector1)
-        [x3 y3 x4 y4] (rest vector2)
-        out []
-       xvec (into out[x1 x2 x3 x4])
-       yvec (into out[y1 y2 y3 y4])
-       xmin (apply min xvec)
-       xmax (apply max xvec)
-       ymin (apply min yvec)
-       ymax (apply max yvec)
-       xrange (- xmax xmin)
-       yrange (- ymax ymin)]
-
-       (cond (< xrange yrange)
-         {:scale (double (/ 480 yrange)), :min-x xmin, :min-y ymin}
-         :else  {:scale (double (/ 480 xrange)), :min-x xmin, :min-y ymin})
-
-    )
-  )
-
-(defn get-xy-scale
-  [v]
-   (if (= (count v) 1)
-     (get-xy-scale-one v)
-   (if (= (count v) 2)
-     (get-xy-scale-two v))) ;else
-)
 
 ;; (defn get-xy-scale
 ;;   [v]
-;;   (cond (= (count v) 1)  (get-xy-scale-one v)
-;;         :else (get-xy-scale-two v)))
+;;    (if (= (count v) 1)
+;;      (get-xy-scale-one v)
+;;    (if (= (count v) 2)
+;;      (get-xy-scale-two v))) ;else
+;; )
+
+
 
 
 ;; # Some fractals to start out with.  Add some of your own!
