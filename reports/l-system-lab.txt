@@ -1,10 +1,10 @@
 Lab report for L-System Lab - aahmed22
-Timestamp: 2014-04-08 22:29:37
+Timestamp: 2014-04-08 23:14:43
 
 | :scenario |                                :title | :result | :score |
 |-----------+---------------------------------------+---------+--------|
-|   working | Test student code vs instructor tests |    Fail |     46 |
-|     total |                           Total Score |         |     46 |
+|   working | Test student code vs instructor tests |    Fail |     73 |
+|     total |                           Total Score |         |     73 |
 
 Details:
 
@@ -12,40 +12,24 @@ Details:
 ** Details for Test student code vs instructor tests
 
 
-FAIL "about transform - If there are no rules, it leaves the initial pattern alone." at (t_student.clj:8)
-    Expected: [:f :x]
-      Actual: [:x]
-
-FAIL "about transform - It changes things it has rules about." at (t_student.clj:10)
-    Expected: [:a :b :c :x :a :b]
-      Actual: [:x]
-
-FAIL "about transform - It changes things it has rules about." at (t_student.clj:13)
-    Expected: [:f :x :a :b]
-      Actual: [:x]
-
-FAIL "about transform - It changes things it has rules about." at (t_student.clj:15)
-    Expected: [:a :b :c :x :a :b :c]
-      Actual: [:x :f :f]
-
 FAIL "about scale-turtle - It works when x and y have the same range." at (t_student.clj:61)
 Actual result did not agree with the checking function.
-        Actual result: [[[:line 10.0 10.0 70.0 70.0] [:line 250.0 250.0 250.0 250.0]]]
+        Actual result: [[[:line 10.0 10.0 70.0 70.0] [:line 250.0 490.0 490.0 250.0]]]
     Checking function: (rough-lines [[:line 10.0 10.0 70.0 70.0] [:line 250.0 490.0 490.0 250.0]])
 
 FAIL "about scale-turtle - It works when x and y have the same range." at (t_student.clj:63)
 Actual result did not agree with the checking function.
-        Actual result: [[[:line 250.0 490.0 70.0 10.0] [:line 10.0 10.0 10.0 10.0]]]
+        Actual result: [[[:line 250.0 490.0 70.0 10.0] [:line 10.0 70.0 490.0 250.0]]]
     Checking function: (rough-lines [[:line 250.0 490.0 70.0 10.0] [:line 10.0 70.0 490.0 250.0]])
 
 FAIL "about scale-turtle - It works when x has a larger range than y." at (t_student.clj:66)
 Actual result did not agree with the checking function.
-        Actual result: [[[:line 10.0 10.0 168.92976588628764 10.80267558528428] [:line 329.46488294314383 329.46488294314383 329.46488294314383 329.46488294314383]]]
+        Actual result: [[[:line 10.0 10.0 168.92976588628764 10.80267558528428] [:line 329.46488294314383 24.448160535117058 490.0 26.05351170568562]]]
     Checking function: (rough-lines [[:line 10.0 10.0 168.92976 10.802675] [:line 329.46487 11.605351 490.0 13.210702]])
 
 FAIL "about scale-turtle - It works when y has a larger range than x." at (t_student.clj:69)
 Actual result did not agree with the checking function.
-        Actual result: [[[:line 10.0 10.0 10.824742268041238 160.10309278350513] [:line 11.649484536082474 11.649484536082474 11.649484536082474 11.649484536082474]]]
+        Actual result: [[[:line 10.0 10.0 10.824742268041238 160.10309278350513] [:line 11.649484536082474 325.05154639175254 13.298969072164947 489.9999999999999]]]
     Checking function: (rough-lines [[:line 10.0 10.0 10.824742 160.10309] [:line 11.649485 325.05154 13.298969 490.0]])
-FAILURE: 8 checks failed.  (But 7 succeeded.)
+FAILURE: 4 checks failed.  (But 11 succeeded.)
 Subprocess failed
