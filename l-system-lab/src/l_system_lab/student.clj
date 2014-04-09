@@ -100,18 +100,24 @@
        yrange (- ymax ymin)
        scale (:scale (get-xy-scale v))]
 
-  (conj [] [[:line (double (-> x1 (- xmin) (* scale) (+ 10)))
+  (into [] [[:line (double (-> x1 (- xmin) (* scale) (+ 10)))
             (double (-> y1 (- ymin) (* scale) (+ 10)))
              (double (-> x2 (- xmin) (* scale) (+ 10)))
              (double (-> y2 (- ymin) (* scale) (+ 10)))]
 
             [:line (double (-> x3 (- xmin) (* scale) (+ 10)))
-             (double (-> y3 (- xmin) (* scale) (+ 10)))
+             (double (-> y3 (- ymin) (* scale) (+ 10)))
              (double (-> x4 (- xmin) (* scale) (+ 10)))
-             (double (-> y4 (- xmin) (* scale) (+ 10)))]]
+             (double (-> y4 (- ymin) (* scale) (+ 10)))]]
    )
  )
 )
+
+(scale-turtle [[:line 10 10 20 20] [:line 50 90 90 50]])
+
+(scale-turtle [[:line 50 90 20 10] [:line 10 20 90 50]])
+
+(scale-turtle [[:line 10 90 1000 95] [:line 2000 100 3000 110]])
 
 
 (defn scale-turtle
