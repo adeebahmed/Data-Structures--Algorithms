@@ -106,9 +106,9 @@
              (double (-> y2 (- ymin) (* scale) (+ 10)))]
 
             [:line (double (-> x3 (- xmin) (* scale) (+ 10)))
-             (double (-> x3 (- xmin) (* scale) (+ 10)))
-             (double (-> x3 (- xmin) (* scale) (+ 10)))
-             (double (-> x3 (- xmin) (* scale) (+ 10)))]]
+             (double (-> y3 (- xmin) (* scale) (+ 10)))
+             (double (-> x4 (- xmin) (* scale) (+ 10)))
+             (double (-> y4 (- xmin) (* scale) (+ 10)))]]
    )
  )
 )
@@ -123,19 +123,27 @@
 )
 
 
+;; (defn transform
+;;   "Creates fractal transformation pattern"
+;;   [init-pat rules] ;; passes in a vector (init-pat) and hashmap (rules)
+;;   (loop [v init-pat  ;; intitialze vector with the initialzation patten passed in by the user
+;;          out[]]
+;;     (if (empty? rules) init-pat
+;;     (if (empty? v) out ;;outputs empty vector
+;;       (if (identical? (first v) (keys rules))  ;; if first ele of vector is equal to the keys within the rules hashmap
+;;          (recur (rest v) (into out (rules (first (key rules)))))
+;;          (recur (rest v) (into out (rest v)))))))
+;; )
+
 (defn transform
-  "Creates fractal transformation pattern"
-  [init-pat rules] ;; passes in a vector (init-pat) and hashmap (rules)
-  (loop [v init-pat  ;; intitialze vector with the initialzation patten passed in by the user
-         out[]]
-    (if (empty? rules) init-pat
-    (if (empty? v) out ;;outputs empty vector
-      (if (identical? (first v) (keys rules))  ;; if first ele of vector is equal to the keys within the rules hashmap
-         (recur (rest v) (into out (rules (first (key rules)))))
-         (recur (rest v) (into out (rest v)))))))
-)
-
-
+  [init-pat rules]
+  (cond
+   (empty? rules) init-pat
+   (empty? init-pat) nil
+   (and (= (first init-pat) :f) (not (empty? (:f rules)))) (into (:f rules) (transform (rest init-pat) rules))
+   (and (= (first init-pat) :x) (not (empty? (:x rules)))) (into (:x rules) (transform (rest init-pat) rules))
+   :else (into [] (cons (first init-pat) (transform (rest init-pat) rules)))
+))
 
 ;; (defn get-xy-scale
 ;;   [v]
