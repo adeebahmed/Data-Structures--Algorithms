@@ -1,0 +1,80 @@
+Lab report for Deque Lab - aahmed22
+Timestamp: 2014-04-15 13:30:42
+
+|  :scenario |                                :title | :result | :score |
+|------------+---------------------------------------+---------+--------|
+|    working | Test student code vs instructor tests |         |        |
+| qualifying | Test student tests vs instructor code |         |        |
+|    broke-1 |             deque-size only returns 0 |         |        |
+|    broke-2 |     push-front doesn't increment size |         |        |
+|    broke-3 |        pop-back lets size go negative |         |        |
+|    broke-4 |            pop-front doesn't dec size |         |        |
+|    broke-5 |          push-back inserts into front |         |        |
+|    broke-6 |     flip-front doesn't clear the back |         |        |
+|    broke-7 |     flip-back doesn't clear the front |         |        |
+|    broke-8 |                back doesn't flip list |         |        |
+|    broke-9 |        front references the back list |         |        |
+|   broke-10 |               flip-front flips always |         |        |
+|      total |                           Total Score |         |      0 |
+
+Details:
+
+
+** Details for Test student code vs instructor tests
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for Test student tests vs instructor code
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for deque-size only returns 0
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for push-front doesn't increment size
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for pop-back lets size go negative
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for pop-front doesn't dec size
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for push-back inserts into front
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for flip-front doesn't clear the back
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for flip-back doesn't clear the front
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for back doesn't flip list
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for front references the back list
+
+Couldn't find project.clj, which is needed for midje
+
+
+** Details for flip-front flips always
+
+Couldn't find project.clj, which is needed for midje
