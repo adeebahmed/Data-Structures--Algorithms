@@ -20,6 +20,10 @@
   (let [{:keys [front back size]} dq]
     (Deque. (cons elt front) back (inc size))))
 
+;(def test_deque (Deque. '(1 2 3 4 5 6) '(7 8) 8))
+
+;(push-front test_deque 10)
+
 (defn push-back
   "Adds an element to the back fo the deque."
   [dq elt]
@@ -36,9 +40,9 @@
      :else (Deque. (rest front) back (dec size)))))
 
 
-(def test_deque (Deque. '(7 8) '(3 4) 2))
+;(def test_deque (Deque. '(7 8) '(3 4) 2))
 
-(flip-front test_deque)
+;(flip-front test_deque)
 
 (defn flip-back
   "Flip the front list to the back list, if necessary."
@@ -53,7 +57,7 @@
   (cond (empty? front) nil
    :else (peek front))))
 
-(front test_deque)
+;(front test_deque)
 
 (defn back ;peek
   "Return the back element of the deque.  May cause a flip."
@@ -62,7 +66,7 @@
   (cond (empty? back) (first (reverse front))
    :else (peek back))))
 
-(back test_deque)
+;(back test_deque)
 
 
 (defn pop-front
@@ -73,7 +77,7 @@
       :else (Deque. (rest front) back (dec size))
           )))
 
-(pop-front test_deque)
+;(pop-front test_deque)
 
 (defn pop-back
   "Pops/dequeues an element from the back of the deque."
@@ -83,5 +87,5 @@
       :else (Deque. front (rest back) (dec size))
           )))
 
-(def test_deque (Deque. '(1 2 3 4 5 6) '(7 8) 8))
-(:size (pop-back test_deque))
+;(def test_deque (Deque. '(1 2 3 4 5 6) '(7 8) 8))
+;(:size (pop-back test_deque))
