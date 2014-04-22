@@ -72,14 +72,14 @@
    :else (first back))))
 
 ;(back test_deque)
-
-
+   
 (defn pop-front
   "Pops/dequeues an element from the front of the deque."
   [dq]
   (let [{:keys [front back size]} dq]
-    (cond (empty? front) (Deque. (rest (:front (flip-front dq))) '() (dec size))
-      :else (Deque. (rest front) back (dec size))
+    (cond (= size 0) dq
+       (empty? front) (Deque. (rest (:front (flip-front dq))) '() (dec size))  
+       :else (Deque. (rest front) back (dec size))
           )))
 
 ;(pop-front test_deque)
@@ -88,8 +88,9 @@
   "Pops/dequeues an element from the back of the deque."
   [dq]
    (let [{:keys [front back size]} dq]
-    (cond (empty? back) (Deque. '() (rest (:back (flip-back dq))) (dec size))
-      :else (Deque. front (rest back) (dec size))
+    (cond (= size 0) dq
+       (empty? back) (Deque. '() (rest (:back (flip-back dq))) (dec size))
+       :else (Deque. front (rest back) (dec size))
           )))
 
 ;(def test_deque (Deque. '(1 2 3 4 5 6) '(7 8) 8))
