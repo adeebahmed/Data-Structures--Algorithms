@@ -1,5 +1,5 @@
 Lab report for Deque Lab - aahmed22
-Timestamp: 2014-04-22 16:47:36
+Timestamp: 2014-04-22 17:02:35
 
 |  :scenario |                                :title |                              :result | :score |
 |------------+---------------------------------------+--------------------------------------+--------|
@@ -26,57 +26,57 @@ Details:
 FAIL "about push-front and pop - push-front adds elements to the front." at (t_core.clj:29)
     Expected: 10
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359$fn__6360$fn__6365.invoke(t_core.clj:29)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359$fn__6360.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349$fn__6350$fn__6355.invoke(t_core.clj:29)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349$fn__6350.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - push-front adds elements to the front." at (t_core.clj:32)
     Expected: 20
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359$fn__6360$fn__6371.invoke(t_core.clj:32)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359$fn__6360.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349$fn__6350$fn__6361.invoke(t_core.clj:32)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349$fn__6350.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - push-front adds elements to the front." at (t_core.clj:35)
     Expected: 34
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359$fn__6360$fn__6377.invoke(t_core.clj:35)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359$fn__6360.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6359.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349$fn__6350$fn__6367.invoke(t_core.clj:35)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349$fn__6350.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6349.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-front removes elements from the front" at (t_core.clj:43)
     Expected: 20
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6395$fn__6396$fn__6401.invoke(t_core.clj:43)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6395$fn__6396.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6395.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6385$fn__6386$fn__6391.invoke(t_core.clj:43)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6385$fn__6386.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6385.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-front removes elements from the front" at (t_core.clj:46)
     Expected: 10
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6395$fn__6396$fn__6407.invoke(t_core.clj:46)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6395$fn__6396.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6395.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6385$fn__6386$fn__6397.invoke(t_core.clj:46)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6385$fn__6386.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6385.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:54)
     Expected: 2
@@ -93,13 +93,13 @@ FAIL "about push-front and pop - pop-back removes elements from the back" at (t_
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:57)
     Expected: 34
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426$fn__6433.invoke(t_core.clj:57)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416$fn__6423.invoke(t_core.clj:57)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:58)
     Expected: 20
@@ -120,13 +120,13 @@ FAIL "about push-front and pop - pop-back removes elements from the back" at (t_
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:63)
     Expected: 34
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426$fn__6443.invoke(t_core.clj:63)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416$fn__6433.invoke(t_core.clj:63)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:64)
     Expected: 34
@@ -143,13 +143,13 @@ FAIL "about push-front and pop - pop-back removes elements from the back" at (t_
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:69)
     Expected: nil
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426$fn__6453.invoke(t_core.clj:69)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416$fn__6443.invoke(t_core.clj:69)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:70)
     Expected: nil
@@ -166,13 +166,13 @@ FAIL "about push-front and pop - pop-back removes elements from the back" at (t_
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:75)
     Expected: nil
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$front.invoke(core.clj:54)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426$fn__6463.invoke(t_core.clj:75)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425$fn__6426.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358$base_function__5041__auto____6425.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357$fn__6358.invoke(t_core.clj:13)
-              deque.t_core$eval6356$base_function__5041__auto____6357.invoke(t_core.clj:13)
-              deque.t_core$eval6356.invoke(t_core.clj:13)
+              deque.core$front.invoke(core.clj:58)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416$fn__6453.invoke(t_core.clj:75)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415$fn__6416.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348$base_function__5041__auto____6415.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347$fn__6348.invoke(t_core.clj:13)
+              deque.t_core$eval6346$base_function__5041__auto____6347.invoke(t_core.clj:13)
+              deque.t_core$eval6346.invoke(t_core.clj:13)
 
 FAIL "about push-front and pop - pop-back removes elements from the back" at (t_core.clj:76)
     Expected: nil
@@ -181,57 +181,57 @@ FAIL "about push-front and pop - pop-back removes elements from the back" at (t_
 FAIL "about push-back and pop - push-back adds elements to the back." at (t_core.clj:94)
     Expected: 10
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489$fn__6490$fn__6495.invoke(t_core.clj:94)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489$fn__6490.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479$fn__6480$fn__6485.invoke(t_core.clj:94)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479$fn__6480.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - push-back adds elements to the back." at (t_core.clj:97)
     Expected: 20
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489$fn__6490$fn__6501.invoke(t_core.clj:97)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489$fn__6490.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479$fn__6480$fn__6491.invoke(t_core.clj:97)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479$fn__6480.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - push-back adds elements to the back." at (t_core.clj:100)
     Expected: 34
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489$fn__6490$fn__6507.invoke(t_core.clj:100)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489$fn__6490.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6489.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479$fn__6480$fn__6497.invoke(t_core.clj:100)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479$fn__6480.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6479.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - pop-back removes elements from the back" at (t_core.clj:108)
     Expected: 20
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6525$fn__6526$fn__6531.invoke(t_core.clj:108)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6525$fn__6526.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6525.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6515$fn__6516$fn__6521.invoke(t_core.clj:108)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6515$fn__6516.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6515.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - pop-back removes elements from the back" at (t_core.clj:111)
     Expected: 10
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6525$fn__6526$fn__6537.invoke(t_core.clj:111)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6525$fn__6526.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6525.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6515$fn__6516$fn__6527.invoke(t_core.clj:111)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6515$fn__6516.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6515.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:119)
     Expected: 2
@@ -248,13 +248,13 @@ FAIL "about push-back and pop - pop-front removes elements from the front" at (t
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:122)
     Expected: 34
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556$fn__6563.invoke(t_core.clj:122)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546$fn__6553.invoke(t_core.clj:122)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:123)
     Expected: 20
@@ -275,13 +275,13 @@ FAIL "about push-back and pop - pop-front removes elements from the front" at (t
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:128)
     Expected: 34
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556$fn__6573.invoke(t_core.clj:128)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546$fn__6563.invoke(t_core.clj:128)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:129)
     Expected: 34
@@ -298,13 +298,13 @@ FAIL "about push-back and pop - pop-front removes elements from the front" at (t
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:134)
     Expected: nil
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556$fn__6583.invoke(t_core.clj:134)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546$fn__6573.invoke(t_core.clj:134)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:137)
     Expected: 0
@@ -317,13 +317,13 @@ FAIL "about push-back and pop - pop-front removes elements from the front" at (t
 FAIL "about push-back and pop - pop-front removes elements from the front" at (t_core.clj:140)
     Expected: nil
       Actual: java.lang.ClassCastException: clojure.lang.Cons cannot be cast to clojure.lang.IPersistentStack
-              deque.core$back.invoke(core.clj:63)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556$fn__6593.invoke(t_core.clj:140)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555$fn__6556.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488$base_function__5041__auto____6555.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487$fn__6488.invoke(t_core.clj:78)
-              deque.t_core$eval6486$base_function__5041__auto____6487.invoke(t_core.clj:78)
-              deque.t_core$eval6486.invoke(t_core.clj:78)
+              deque.core$back.invoke(core.clj:67)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546$fn__6583.invoke(t_core.clj:140)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545$fn__6546.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478$base_function__5041__auto____6545.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477$fn__6478.invoke(t_core.clj:78)
+              deque.t_core$eval6476$base_function__5041__auto____6477.invoke(t_core.clj:78)
+              deque.t_core$eval6476.invoke(t_core.clj:78)
 FAILURE: 44 checks failed.  (But 56 succeeded.)
 Subprocess failed
 
