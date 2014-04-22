@@ -30,32 +30,37 @@
   (let [{:keys [front back size]} dq]
   (Deque. front (cons elt back) (inc size))))
 
+(def test_deque (Deque. '(1 2 3 4 5 6) '(7 8) 8))
+
+(push-back test_deque 8)
 
 (defn flip-front
   "Flip the back list to the front list, if necessary."
   [dq]
   (let [{:keys [front back size]} dq]
     (cond (empty? front)
-          (Deque. (rest (reverse back)) '() (dec size))
-     :else (Deque. (rest front) back (dec size)))))
+          (Deque. (reverse back) front size)
+     :else dq)))
 
 
-;(def test_deque (Deque. '(7 8) '(3 4) 2))
+(def test_deque (Deque. '() '(3 4) 2))
 
-;(flip-front test_deque)
+(flip-front test_deque)
 
 (defn flip-back
   "Flip the front list to the back list, if necessary."
   [dq]
   (let [{:keys [front back size]} dq]
-    (Deque. back front size)))
+    (cond (empty? back)
+          (Deque. back (reverse front) size)
+     :else dq)))
 
 (defn front ;peek
   "Return the front element of the deque.  May cause a flip."
   [dq]
   (let [{:keys [front back size]} dq]
-  (cond (empty? front) nil
-   :else (peek front))))
+  (cond (empty? front) (first (:front (flip-front dq)))
+   :else (first front))))
 
 ;(front test_deque)
 
@@ -63,8 +68,8 @@
   "Return the back element of the deque.  May cause a flip."
   [dq]
   (let [{:keys [front back size]} dq]
-  (cond (empty? back) (first (reverse front))
-   :else (peek back))))
+  (cond (empty? back) (first (:back (flip-back dq)))
+   :else (first back))))
 
 ;(back test_deque)
 
@@ -73,7 +78,7 @@
   "Pops/dequeues an element from the front of the deque."
   [dq]
   (let [{:keys [front back size]} dq]
-    (cond (empty? front) dq
+    (cond (empty? front) (Deque. (rest (:front (flip-front dq))) '() (dec size))
       :else (Deque. (rest front) back (dec size))
           )))
 
@@ -83,7 +88,7 @@
   "Pops/dequeues an element from the back of the deque."
   [dq]
    (let [{:keys [front back size]} dq]
-    (cond (empty? back) dq
+    (cond (empty? back) (Deque. '() (rest (:back (flip-back dq))) (dec size))
       :else (Deque. front (rest back) (dec size))
           )))
 
