@@ -1,29 +1,104 @@
-Grade Report for Adeeb Ahmed
-Produced 2014-05-02 15:05
-Netid: aahmed22 cwid: A20301656
-Course: cs331 (2014-01)  Section: 02
+<!DOCTYPE html>
+<html><head><title>Ring: Stacktrace</title><style type="text/css">/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}
 
-                    Assignment  Status Raw Max    Norm Weight  Points 
------------------------------- ------- --- --- ------- ------ ------- 
-                        Exam 1  Graded  58  72  80.56% 0.3750 30.2083 
-                        Exam 2  Graded  84 110  76.36% 0.3750 28.6364 
-                    Final Exam Pending n/a 100     n/a 0.0000  0.0000 
-               Linked List Lab  Graded 100 100 100.00% 0.0375  3.7500 
-                  L System Lab  Graded 100 100 100.00% 0.0375  3.7500 
-                   Dequeue Lab  Graded 100 100 100.00% 0.0375  3.7500 
-                 Traversal Lab  Graded   0 100   0.00% 0.0375  0.0000 
-         Pre Course Assessment  Graded   1   1 100.00% 0.0091  0.9091 
- Clojure Introduction Activity  Graded   1   1 100.00% 0.0091  0.9091 
-                  Clojure Data  Graded   1   1 100.00% 0.0091  0.9091 
-               Record Activity  Graded   1   1 100.00% 0.0091  0.9091 
-            Recursion Activity  Graded   1   1 100.00% 0.0091  0.9091 
-      Immutable Lists Activity  Graded   1   1 100.00% 0.0091  0.9091 
-        Mutable Lists Activity  Graded   1   1 100.00% 0.0091  0.9091 
-Reversing a Doubly Linked List  Graded   1   1 100.00% 0.0091  0.9091 
-         Vectors (Running Sum)  Graded   1   1 100.00% 0.0091  0.9091 
-               Writing Dequeue Missing   0   1   0.00% 0.0091  0.0000 
-            Traversal Activity Pending n/a   1     n/a 0.0000  0.0000 
-                  List Zippers  Graded   1   1 100.00% 0.0091  0.9091 
-             Quadratic Sorting Pending n/a   1     n/a 0.0000  0.0000 
------------------------------- ------- --- --- ------- ------ ------- 
-                         Total                  79.19% 1.0000 79.1856 
+body {
+    font-family: sans-serif;
+    background: #a00;
+    padding: 1em;
+}
+
+#exception {
+    background: #f2f2f2;
+    color: #333;
+    padding: 1em;
+}
+
+h1 {
+    color: #800;
+    font-size: 32pt;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.message {
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#causes h2 {
+    font-size: 22pt;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+#causes h2 .class {
+    color: #800;
+}
+
+#causes .message {
+    font-size: 14pt;
+}
+
+.trace {
+    width: 90%;
+    margin: auto;
+}
+
+.trace table {
+    width: 100%;
+    font-size: 12pt;
+    background: #dadada;
+    border: 0.8em solid #dadada;
+    margin-bottom: 1.5em;
+}
+
+.trace table tr.clojure {
+    color: #222;
+}
+
+.trace table tr.java {
+    color: #6a6a6a;
+}
+
+.trace td {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.trace td.method {
+    padding-left: 1em;
+    padding-right: 0.2em;
+    text-aligh: left;
+}
+
+.trace td.source {
+    padding-left: 0.2em;
+    text-align: right;
+}
+
+.trace .views {
+    width: 100%;
+    background: #bcbcbc;
+    padding: 0.5em 0;
+}
+
+.views .label, .views ul, .views li {
+    display: inline-block;
+}
+
+.trace .views .label {
+    padding: 0 1em;
+}
+
+.trace .views li {
+    padding: 0 2em;
+    cursor: pointer;
+}
+</style></head><body><div id="exception"><h1>java.lang.IllegalArgumentException</h1><div class="message">No method in multimethod 'get-course' for dispatch value: null</div><div class="trace"><table><tbody><tr class="java"><td class="source">MultiFn.java:160</td><td class="method">clojure.lang.MultiFn.getFn</td></tr><tr class="java"><td class="source">MultiFn.java:227</td><td class="method">clojure.lang.MultiFn.invoke</td></tr><tr class="clojure"><td class="source">NO_SOURCE_FILE:172</td><td class="method">gradedb.database/get-course-id</td></tr><tr class="clojure"><td class="source">NO_SOURCE_FILE:203</td><td class="method">gradedb.database/get-student[fn]</td></tr><tr class="clojure"><td class="source">NO_SOURCE_FILE:203</td><td class="method">gradedb.database/get-student</td></tr><tr class="clojure"><td class="source">NO_SOURCE_FILE:778</td><td class="method">gradedb.database/report-header</td></tr><tr class="clojure"><td class="source">NO_SOURCE_FILE:1036</td><td class="method">gradedb.database/report</td></tr><tr class="clojure"><td class="source">handler.clj:179</td><td class="method">gradedb.handler/report[fn]</td></tr><tr class="clojure"><td class="source">core.clj:168</td><td class="method">liberator.core/run-handler</td></tr><tr class="clojure"><td class="source">core.clj:222</td><td class="method">liberator.core/handle-ok</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:228</td><td class="method">liberator.core/multiple-representations?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:230</td><td class="method">liberator.core/respond-with-entity?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:234</td><td class="method">liberator.core/new?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:236</td><td class="method">liberator.core/post-redirect?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:242</td><td class="method">liberator.core/post!</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:296</td><td class="method">liberator.core/post-to-existing?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:306</td><td class="method">liberator.core/method-delete?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:326</td><td class="method">liberator.core/if-modified-since-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:343</td><td class="method">liberator.core/if-none-match-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:363</td><td class="method">liberator.core/if-unmodified-since-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:377</td><td class="method">liberator.core/if-match-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:380</td><td class="method">liberator.core/exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:399</td><td class="method">liberator.core/accept-encoding-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:412</td><td class="method">liberator.core/accept-charset-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:426</td><td class="method">liberator.core/accept-language-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:436</td><td class="method">liberator.core/media-type-available?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:439</td><td class="method">liberator.core/accept-exists?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:456</td><td class="method">liberator.core/is-options?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:459</td><td class="method">liberator.core/valid-entity-length?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:462</td><td class="method">liberator.core/known-content-type?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:464</td><td class="method">liberator.core/valid-content-header?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:467</td><td class="method">liberator.core/allowed?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:470</td><td class="method">liberator.core/authorized?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:473</td><td class="method">liberator.core/malformed?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:476</td><td class="method">liberator.core/method-allowed?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:479</td><td class="method">liberator.core/uri-too-long?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:482</td><td class="method">liberator.core/known-method?</td></tr><tr class="clojure"><td class="source">core.clj:96</td><td class="method">liberator.core/decide</td></tr><tr class="clojure"><td class="source">core.clj:485</td><td class="method">liberator.core/service-available?</td></tr><tr class="clojure"><td class="source">core.clj:558</td><td class="method">liberator.core/run-resource</td></tr><tr class="clojure"><td class="source">handler.clj:170</td><td class="method">gradedb.handler/report</td></tr><tr class="clojure"><td class="source">response.clj:27</td><td class="method">compojure.response/eval880[fn]</td></tr><tr class="clojure"><td class="source">response.clj:10</td><td class="method">compojure.response/eval841[fn]</td></tr><tr class="clojure"><td class="source">core.clj:93</td><td class="method">compojure.core/make-route[fn]</td></tr><tr class="clojure"><td class="source">core.clj:39</td><td class="method">compojure.core/if-route[fn]</td></tr><tr class="clojure"><td class="source">core.clj:24</td><td class="method">compojure.core/if-method[fn]</td></tr><tr class="clojure"><td class="source">core.clj:106</td><td class="method">compojure.core/routing[fn]</td></tr><tr class="clojure"><td class="source">core.clj:2443</td><td class="method">clojure.core/some</td></tr><tr class="clojure"><td class="source">core.clj:106</td><td class="method">compojure.core/routing</td></tr><tr class="java"><td class="source">RestFn.java:139</td><td class="method">clojure.lang.RestFn.applyTo</td></tr><tr class="clojure"><td class="source">core.clj:619</td><td class="method">clojure.core/apply</td></tr><tr class="clojure"><td class="source">core.clj:111</td><td class="method">compojure.core/routes[fn]</td></tr><tr class="clojure"><td class="source">params.clj:55</td><td class="method">ring.middleware.params/wrap-params[fn]</td></tr><tr class="clojure"><td class="source">keyword_params.clj:27</td><td class="method">ring.middleware.keyword-params/wrap-keyword-params[fn]</td></tr><tr class="clojure"><td class="source">nested_params.clj:65</td><td class="method">ring.middleware.nested-params/wrap-nested-params[fn]</td></tr><tr class="clojure"><td class="source">params.clj:55</td><td class="method">ring.middleware.params/wrap-params[fn]</td></tr><tr class="clojure"><td class="source">multipart_params.clj:103</td><td class="method">ring.middleware.multipart-params/wrap-multipart-params[fn]</td></tr><tr class="clojure"><td class="source">flash.clj:14</td><td class="method">ring.middleware.flash/wrap-flash[fn]</td></tr><tr class="clojure"><td class="source">session.clj:43</td><td class="method">ring.middleware.session/wrap-session[fn]</td></tr><tr class="clojure"><td class="source">cookies.clj:160</td><td class="method">ring.middleware.cookies/wrap-cookies[fn]</td></tr><tr class="clojure"><td class="source">web.clj:94</td><td class="method">immutant.web/wrap-resource[fn]</td></tr><tr class="clojure"><td class="source">reload.clj:18</td><td class="method">ring.middleware.reload/wrap-reload[fn]</td></tr><tr class="clojure"><td class="source">stacktrace.clj:17</td><td class="method">ring.middleware.stacktrace/wrap-stacktrace-log[fn]</td></tr><tr class="clojure"><td class="source">stacktrace.clj:80</td><td class="method">ring.middleware.stacktrace/wrap-stacktrace-web[fn]</td></tr><tr class="clojure"><td class="source">internal.clj:42</td><td class="method">immutant.web.session.internal/servlet-session-wrapper[fn]</td></tr><tr class="clojure"><td class="source">servlet.clj:45</td><td class="method">immutant.web.servlet/create-servlet[fn]</td></tr><tr class="clojure"><td class="source">servlet.clj:41</td><td class="method">immutant.web.servlet/create-servlet[fn]</td></tr><tr class="java"><td class="source">ApplicationFilterChain.java:295</td><td class="method">org.apache.catalina.core.ApplicationFilterChain.internalDoFilter</td></tr><tr class="java"><td class="source">ApplicationFilterChain.java:214</td><td class="method">org.apache.catalina.core.ApplicationFilterChain.doFilter</td></tr><tr class="java"><td class="source">StandardWrapperValve.java:230</td><td class="method">org.apache.catalina.core.StandardWrapperValve.invoke</td></tr><tr class="java"><td class="source">StandardContextValve.java:149</td><td class="method">org.apache.catalina.core.StandardContextValve.invoke</td></tr><tr class="java"><td class="source">SecurityContextAssociationValve.java:169</td><td class="method">org.jboss.as.web.security.SecurityContextAssociationValve.invoke</td></tr><tr class="java"><td class="source">StandardHostValve.java:145</td><td class="method">org.apache.catalina.core.StandardHostValve.invoke</td></tr><tr class="java"><td class="source">ErrorReportValve.java:97</td><td class="method">org.apache.catalina.valves.ErrorReportValve.invoke</td></tr><tr class="java"><td class="source">StandardEngineValve.java:102</td><td class="method">org.apache.catalina.core.StandardEngineValve.invoke</td></tr><tr class="java"><td class="source">CoyoteAdapter.java:336</td><td class="method">org.apache.catalina.connector.CoyoteAdapter.service</td></tr><tr class="java"><td class="source">Http11Processor.java:856</td><td class="method">org.apache.coyote.http11.Http11Processor.process</td></tr><tr class="java"><td class="source">Http11Protocol.java:653</td><td class="method">org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process</td></tr><tr class="java"><td class="source">JIoEndpoint.java:920</td><td class="method">org.apache.tomcat.util.net.JIoEndpoint$Worker.run</td></tr><tr class="java"><td class="source">Thread.java:724</td><td class="method">java.lang.Thread.run</td></tr></tbody></table></div></div></body></html>
