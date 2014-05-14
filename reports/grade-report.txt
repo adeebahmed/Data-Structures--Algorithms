@@ -1,17 +1,17 @@
 Grade Report for Adeeb Ahmed
-Produced 2014-05-06 09:32
+Produced 2014-05-13 21:06
 Netid: aahmed22 cwid: A20301656
 Course: cs331 (2014-01)  Section: 02
 
                     Assignment   Status Raw Max    Norm Weight  Points 
 ------------------------------ -------- --- --- ------- ------ ------- 
-                        Exam 1   Graded  58  72  80.56% 0.3750 30.2083 
-                        Exam 2   Graded  84 110  76.36% 0.3750 28.6364 
-                    Final Exam  Pending n/a 100     n/a 0.0000  0.0000 
-               Linked List Lab   Graded 100 100 100.00% 0.0375  3.7500 
-                  L System Lab   Graded 100 100 100.00% 0.0375  3.7500 
-                   Dequeue Lab   Graded 100 100 100.00% 0.0375  3.7500 
-                 Traversal Lab   Graded   0 100   0.00% 0.0375  0.0000 
+                        Exam 1   Graded  58  72  80.56% 0.2500 20.1389 
+                        Exam 2 Replaced n/a 110  80.22% 0.2500 20.0549 
+                    Final Exam   Graded 146 182  80.22% 0.2500 20.0549 
+               Linked List Lab   Graded 100 100 100.00% 0.0500  5.0000 
+                  L System Lab   Graded 100 100 100.00% 0.0500  5.0000 
+                   Dequeue Lab   Graded 100 100 100.00% 0.0500  5.0000 
+                 Traversal Lab  Dropped   0 100   0.00% 0.0000  0.0000 
          Pre Course Assessment   Graded   1   1 100.00% 0.0100  1.0000 
  Clojure Introduction Activity   Graded   1   1 100.00% 0.0100  1.0000 
                   Clojure Data   Graded   1   1 100.00% 0.0100  1.0000 
@@ -26,4 +26,4 @@ Reversing a Doubly Linked List   Graded   1   1 100.00% 0.0100  1.0000
                   List Zippers Canceled n/a   1     n/a 0.0000  0.0000 
              Quadratic Sorting Canceled n/a   1     n/a 0.0000  0.0000 
 ------------------------------ -------- --- --- ------- ------ ------- 
-                         Total                   78.09% 1.0000 78.0947 
+                         Total                   83.25% 1.0000 83.2488 
